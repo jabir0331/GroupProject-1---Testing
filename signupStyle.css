@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(3.5px); /* Adjust the blur radius as needed */
+    z-index: -1; /* Ensure it is behind the content */
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    filter: brightness(1.25);
+    border-image: fill 0 linear-gradient(#0001, #000);
+    box-shadow: 2.5px 2.5px 10px darkcyan;
+}
+
+body::before, .container{
+    background-image: url(bgImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.leftContainer{
+    display: block;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.logoContainer{
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    /* margin-top: 1%; */
+    background-image: url(logofinal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    /* background-color: #000;
+     */
+}
+
+.textContainer{
+    width: 100%;
+    height: 60%;
+    padding-top: 7.5%;
+    padding-left: 15%;
+    /* background-color: #000; */
+    color: #ffff;
+    font-size: 27.5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.rightContainer{
+    width: 50%;
+    height: 100%;
+    background-color: #ffff;
+    opacity: 0.6;
+}
+
+.forrm{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.heading{
+    margin-top: 25%;
+    margin-bottom: 10%;
+    font-size: 30px;
+}
+
+input{
+    margin-right: 10%;
+    margin-bottom: 7.5%;
+    padding: 2.5%;
+    width: 80%;
+    background-color: darkgray;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.btn{
+    margin-bottom: 1.5%;
+    width: 80%;
+    color: #ffff;
+    background-color: darkcyan;
+    cursor: pointer;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 12px;
+}
+
+a{
+    color: darkcyan;
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
